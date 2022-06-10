@@ -82,3 +82,9 @@ body {
 .commentBox {
   margin-left: 20px;
 }
+
+
+.aboutPage {
+  text-align: center;
+  padding: 10%;
+}
