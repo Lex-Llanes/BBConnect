@@ -5,7 +5,8 @@ import Homepage from './components/homepage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Search from "./components/search";
-import Post from "./components/post";
+import Post from "./components/postformpage";
+import Postpage from './components/postspage';
 
 function App() {
   return (
@@ -17,10 +18,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Homepage />}/>
+          <Route path='/discussions' element={<Postpage />}/>
         </Routes>
       </Router>
-      <Search />
-      <Post />
     </div>
   );
 }

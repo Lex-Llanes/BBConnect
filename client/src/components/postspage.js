@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-
+import Search from './search'
 //Renders posts - starting with most current
 //Filters posts based on search
 //Comments field - simple comment for now - maybe hardcode for now?
@@ -45,8 +45,9 @@ const Postpage = () => {
 
     return (
         <div className='PostPage'>
+            <Search/>
             {postList.map((items) => (
-                <ul>
+                <ul className='ulcomments'>
                     <li>{items.title}</li>
                     <li>{items.content}</li>
                     <li>{items.date}</li>
