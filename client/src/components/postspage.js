@@ -11,27 +11,33 @@ const Postpage = () => {
 
     const posts = [
         {
-            "title": "Title 1",
-            "content": "Content 1",
-            "date": "1",
+            "postid": 1,
+            "title": "OB Help",
+            "content": "I need help finding a good doctor in the bay area, specifically Oakland.",
+            "date": "06-10-2022",
+            "comment": "I know this really good doctor in Oakland, will email you the info right now!"
         },
         {
-            "title": "Title 2",
-            "content": "Content 2",
-            "date": "2",
+            "postid": 2,
+            "title": "Baby Powder Recalls",
+            "content": "Similac is currently on recall, make sure to call the company or return the pruduct to which ever store you bought it from.",
+            "date": "05-20-2022",
+            "comment": "Thanks for the heads up!"
         },
         {
-            "title": "Title 3",
-            "content": "Content 3",
-            "date": "3",
+            "postid": 3,
+            "title": "Pregnancy Pillow",
+            "content": "Looking for the best pregnancy pillow right now, nothing too expensive tho please.",
+            "date": "03-16-2022",
+            "comment": "Found this pillow on amazon, will send the link over ^_^."
         }]
 
 
 
     const comments = [
-        { "Comment": "Heres comment 1" },
-        { "Comment": "Heres comment 2" },
-        { "Comment": "Heres comment 3" },
+        { "commentid": 1,"Comment": "Heres comment 1" },
+        { "commentid": 2,"Comment": "Heres comment 2" },
+        { "commentid": 3,"Comment": "Heres comment 3" },
     ]
 
     // const commentsTwo = [
@@ -56,16 +62,12 @@ const Postpage = () => {
             <Search />
             {postList.map((items) => (
                 <ul className='ulcomments card'>
-                    <li>{items.title}</li>
-                    <li>{items.content}</li>
-                    <li>{items.date}</li>
-                    <div className='commentBox'>
-                        {commentList.map((comment) => (
-                            <ul>
-                                <li>{comment.Comment}</li>
-                            </ul>
-                        ))}
-                    </div>
+                    <li><span style={{fontWeight: "bold"}}>Title: </span>{items.title}</li>
+                    <li><span style={{fontWeight: "bold"}}>Chatter: </span>{items.content}</li>
+                    <li><span style={{fontWeight: "bold"}}>Date: </span>{items.date}</li>
+                    <br/>
+                    <span style={{fontWeight: "bold"}}>Comments: </span>
+                    <li className='commentBox'>{items.comment}</li>
                 </ul>
 
             ))}
