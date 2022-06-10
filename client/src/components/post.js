@@ -1,19 +1,20 @@
-import React from 'react'
+import {React, useState} from 'react'
 
 const Post = () => {
 
     /**VARIABLES**/
-    const 
+    const [postInput, setPost] = useState("")
 
 
   return (
-    <div className='searchinput'>
+    <div className='postinput'>
         <form>
-            <input 
-                name="searchinput"
-                placeholder="Search..."
-                value={searchInput}
-                onChange={(event) => setSearch(event.target.value)}
+            <textarea 
+                name="postinput"
+                type="textarea"
+                placeholder="Post..."
+                value={postInput}
+                onChange={(event) => setPost(event.target.value)}
             />
         </form>
     </div>
