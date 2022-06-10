@@ -1,16 +1,15 @@
-import './App.css';
-import { React } from "react"
+import "./App.css";
+import { React } from "react";
 
-import Search from './components/search';
-import Post from './components/post';
-
+import Search from "./components/search";
+import Post from "./components/post";
 
 function App() {
-
   return (
     <div>
-      <Search/>
-      <Post/>
+      <h1>TEST</h1>
+      <Search />
+      <Post />
     </div>
   );
 }
