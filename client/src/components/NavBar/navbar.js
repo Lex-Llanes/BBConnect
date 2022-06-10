@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavLink, NavMenu } from "./NavBarElements.js";
+import image from "./BBconnect.png"
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
     <ul>
         <NavMenu>   
         <div className="logo">
-      {/* <img className="logo" alt="bbconnectlogo"src={image} style={{height:"75px"}} /> */}
+      <img className="logo" alt="bbconnectlogo"src={image} style={{height:"75px"}} />
         </div>
         <li>
           <NavLink to="/about" activeStyle>
