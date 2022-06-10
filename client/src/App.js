@@ -1,22 +1,23 @@
-import './App.css';
+import "./App.css";
 import { React } from "react";
-import Navbar from './components/NavBar/navbar';
-import Homepage from './components/homepage';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from "./components/NavBar/navbar";
+import Homepage from "./components/homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Search from "./components/search";
 import Post from "./components/post";
+import SMSButton from "./components/smsbutton";
 
 function App() {
   return (
     <div>
-
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path='/' element={<Homepage />}/>
+          <Route path="/" element={<Homepage />} />
         </Routes>
       </Router>
+      <SMSButton />
       <Search />
       <Post />
     </div>
