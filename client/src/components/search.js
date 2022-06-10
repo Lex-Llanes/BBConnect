@@ -4,7 +4,9 @@ const Search = () => {
 
     /**VARIABLES**/
     const [searchInput, setSearch] = useState("")
+    const [searchResults, setSearchResults] = useState([])
 
+    
 
   return (
     <div className='searchinput'>
