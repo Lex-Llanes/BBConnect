@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -43,7 +44,7 @@ ul {
   padding: 0;
 }
 
-li.list{
+li.list {
   margin-bottom: 5px;
   /* color: aqua; */
   list-style: none;
@@ -53,10 +54,10 @@ li.list{
 
 
 li.list::before {
-  content: ""; 
+  content: "";
   /* position: absolute;  */
-  left: 2px; 
-  top: 5px; 
+  left: 2px;
+  top: 5px;
   width: 3px;
   height: 6px;
   border: solid #fc0217;
@@ -64,12 +65,25 @@ li.list::before {
   transform: rotate(45deg);
 }
 
-.weather-form{
+.weather-form {
 
   margin-top: 25px;
 
 }
 
-.LoginText{
+.LoginText {
   margin-top: 35px;
 }
+
+body {
+  background-color: #954D34;
+}
+
+.commentBox {
+  margin-left: 20px;
+}
+.main {
+  list-style: none;
+}
+
+

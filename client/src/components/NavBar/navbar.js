@@ -1,15 +1,16 @@
 import React from 'react';
 import { Nav, NavLink, NavMenu } from "./NavBarElements.js";
+import image from "./BBconnect.png"
 
 const Navbar = () => {
   return (
     <div> 
       <> 
     <Nav className="nav">
-    <ul>
+    <ul className='main'>
         <NavMenu>   
         <div className="logo">
-      {/* <img className="logo" alt="bbconnectlogo"src={image} style={{height:"75px"}} /> */}
+      <img className="logo" alt="bbconnectlogo"src={image} style={{height:"75px"}} />
         </div>
         <li>
           <NavLink to="/about" activeStyle>
@@ -19,11 +20,6 @@ const Navbar = () => {
                 <li>
                 <NavLink to="/resources" activeStyle>
                   The Plug
-                </NavLink>
-                </li>
-                <li>
-                <NavLink to="/support" activeStyle>
-                 Support Group
                 </NavLink>
                 </li>
                 <li>

@@ -6,20 +6,20 @@ const Search = () => {
     const [searchInput, setSearch] = useState("")
     const [searchResults, setSearchResults] = useState([])
 
-    
 
-  return (
-    <div className='searchinput'>
-        <form>
-            <input 
-                name="searchinput"
-                placeholder="Search..."
-                value={searchInput}
-                onChange={(event) => setSearch(event.target.value)}
-            />
-        </form>
-    </div>
-  )
+
+    return (
+        <div className='searchinput'>
+            <form>
+                <input 
+                    name="searchinput"
+                    placeholder="Search..."
+                    value={searchInput}
+                    onChange={(event) => setSearch(event.target.value)}
+                />
+            </form>
+        </div>
+    )
 }
 
 export default Search;
