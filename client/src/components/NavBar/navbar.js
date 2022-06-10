@@ -23,11 +23,6 @@ const Navbar = () => {
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="/support" activeStyle>
-                 Support Group
-                </NavLink>
-                </li>
-                <li>
                 <NavLink to="/discussions" activeStyle>
                   The Tea
                 </NavLink>
