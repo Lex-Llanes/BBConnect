@@ -82,3 +82,6 @@ body {
 .commentBox {
   margin-left: 20px;
 }
+.main {
+  list-style: none;
+}

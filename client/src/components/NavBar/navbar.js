@@ -7,7 +7,7 @@ const Navbar = () => {
     <div> 
       <> 
     <Nav className="nav">
-    <ul>
+    <ul className='main'>
         <NavMenu>   
         <div className="logo">
       <img className="logo" alt="bbconnectlogo"src={image} style={{height:"75px"}} />
@@ -20,11 +20,6 @@ const Navbar = () => {
                 <li>
                 <NavLink to="/resources" activeStyle>
                   The Plug
-                </NavLink>
-                </li>
-                <li>
-                <NavLink to="/support" activeStyle>
-                 Support Group
                 </NavLink>
                 </li>
                 <li>
