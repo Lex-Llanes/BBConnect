@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
   font-family: 'Oswald', sans-serif;;
+  color: #E6D3B3;
 `;
 
 export const NavLink = styled(Link)`
@@ -21,8 +22,11 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: black;
+    color: #E6D3B3;
+    text-shadow: rgba(238, 255, 242, 0.9) 0px 0px 5px;
   }
+  color: #E6D3B3;
+  font-size: 1.5rem;
 `;
   
 export const Bars = styled(FaBars)`

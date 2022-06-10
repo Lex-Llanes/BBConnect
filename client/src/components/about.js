@@ -1,9 +1,10 @@
 import React from 'react';
+import image from "./BBconnect.png"
 
 export default function About() {
   return (
     <div className='aboutPage'>
-
+      <img className="logo" alt="bbconnectlogo" src={image} style={{ height: "250px" }} />
       <h1>About BB-Connect</h1>
       <br />
 
