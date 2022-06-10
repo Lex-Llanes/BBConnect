@@ -81,9 +81,19 @@ body {
 
 .commentBox {
   margin-left: 20px;
+
 }
 .main {
   list-style: none;
 }
 
 
+.ulcomments {
+  background-color: #82ab90;
+  padding: 2%;
+  list-style: none;
+}
+
+.aboutPage {
+  padding: 2%;
+}

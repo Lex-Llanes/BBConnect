@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <div className='aboutPage'>
 
       <h1>About BB-Connect</h1>
       <br />
